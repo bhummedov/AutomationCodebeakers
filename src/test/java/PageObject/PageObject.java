@@ -10,16 +10,16 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class AppTest{
+public class PageObject {
 
         private WebDriver tabsDriver;
 
-        public AppTest(WebDriver driver) {
+        public PageObject(WebDriver driver) {
             tabsDriver = driver;
             PageFactory.initElements(tabsDriver, this);
         }
 
-        @FindBy(xpath = "//ul[@role='tablist']//a")
+        @FindBy(xpath = "https://hr-testing.buffsci.org/")
         public static List<WebElement> allTabs;
 
 }
